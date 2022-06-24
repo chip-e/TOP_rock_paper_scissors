@@ -26,10 +26,10 @@ choices.forEach((button) => {
     cpuDisplay.innerHTML = cpu;
     let gameResult = (player, cpu) => {
       if (player == 'ROCK' && cpu == 'SCSR' || player == 'PAPR' && cpu == 'ROCK' || player == 'SCSR' && cpu == 'PAPR') {
-        playerScore++;    //tie
+        playerScore++;
       } else if (player == cpu) {
         tieScore++ //change to msg on page
-      } else {    //lose
+      } else {   
         cpuScore++;
       }
     };
@@ -37,8 +37,5 @@ choices.forEach((button) => {
     playerScoreDisplay.innerHTML = playerScore;
     cpuScoreDisplay.innerHTML = cpuScore;
     tieDisplay.innerHTML = tieScore;
-    //if (playerScore === 5) 
-    //if (cpuScore === 5)
-
   });
 });
